@@ -125,7 +125,8 @@ const ListPage = () => {
 
           <Row>
             <Col>
-              <Table hover responsive className="align-middle">
+            <div className='rounded-3 overflow-hidden'>
+              <Table hover responsive className="align-middle mb-0">
                 <thead className="table-dark">
                   <tr>
                     <th>ID</th>
@@ -135,7 +136,7 @@ const ListPage = () => {
                     <th>Department</th>
                     <th>Dependents</th>
                     <th>Project (Total Hours)</th>
-                    <th className="text-center">Action</th>
+                    <th className="text-center" style={{width:'200px'}}>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -196,6 +197,7 @@ const ListPage = () => {
                   )}
                 </tbody>
               </Table>
+              </div>
             </Col>
           </Row>
         </Col>

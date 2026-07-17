@@ -94,7 +94,7 @@ const ListPage = () => {
                   label={dept.depName}
                   checked={selectedDepts.includes(dept.id.toString())}
                   onChange={() => handleDeptCheckboxChange(dept.id.toString())}
-                  className="mb-2 fs-5"
+                  className="mb-2"
                 />
               ))}
             </Form>
@@ -112,7 +112,7 @@ const ListPage = () => {
                 className="py-2"
               />
             </Col>
-            <Col className="text-end mt-2 mt-md-0">
+            <Col className="text-end mt-2 mt-md-0" xs='auto'>
               <Button
                 variant="primary"
                 onClick={() => navigate('/employee/create')}
